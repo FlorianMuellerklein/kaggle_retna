@@ -296,10 +296,10 @@ def main():
     print train_images[0].shape
     print y
     print np.amax(y)
-    plot_sample(train_images[randint(0, train_images.shape[0])])
-    plot_sample(train_images[randint(0, train_images.shape[0])])
-    plot_sample(train_images[randint(0, train_images.shape[0])])
-    plot_sample(train_images[randint(0, train_images.shape[0])])
+    #plot_sample(train_images[randint(0, train_images.shape[0])])
+    #plot_sample(train_images[randint(0, train_images.shape[0])])
+    #plot_sample(train_images[randint(0, train_images.shape[0])])
+    #plot_sample(train_images[randint(0, train_images.shape[0])])
     
     # binarize labels
     label_enc = LabelEncoder() #LabelBinarizer()
@@ -315,7 +315,7 @@ def main():
     end = time.time()
     
     print 'Training time: ', (end - start) / 60
-    plot_loss(conv_net)
+    #plot_loss(conv_net)
     
     preds = conv_net.predict(train_images)
     preds = np.around(preds)
