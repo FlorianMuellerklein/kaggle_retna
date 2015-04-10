@@ -29,7 +29,7 @@ learning_rate = 0.003
 PATH = 'train_grey.npy'
 yPATH ='train_y.npy'
 TESTPATH = 'test.npy'
-PIXELS = 196
+PIXELS = 512
 imageSize = PIXELS * PIXELS
 num_features = imageSize
 print num_features
@@ -251,11 +251,11 @@ conv_net = NeuralNet(
         ('output', layers.DenseLayer),
     ],
     input_shape = (None, 1, PIXELS, PIXELS),
-    conv1_num_filters = 8, conv1_filter_size = (3, 3), pool1_ds = (2, 2),
+    conv1_num_filters = 32, conv1_filter_size = (3, 3), pool1_ds = (2, 2),
     dropout1_p = 0.1,
-    conv2_num_filters = 16, conv2_filter_size = (3, 3), pool2_ds = (2, 2),
+    conv2_num_filters = 64, conv2_filter_size = (3, 3), pool2_ds = (2, 2),
     dropout2_p = 0.2,
-    conv3_num_filters = 32, conv3_filter_size = (3, 3), pool3_ds = (2, 2),
+    conv3_num_filters = 128, conv3_filter_size = (3, 3), pool3_ds = (2, 2),
     dropout3_p = 0.3,
     
     hidden4_num_units = 512,
