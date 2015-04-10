@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGES="/Volumes/Mildred/Kaggle/Retna/Data/Backup/train/*.jpeg"
+IMAGES="/home/ubuntu/kaggle_retna/data/train/*.jpeg"
 for file in $IMAGES
 do
 	echo "$file"
