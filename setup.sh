@@ -48,3 +48,5 @@ unzip trainLabels.csv.zip
 rm -rf www.kaggle.com/
 
 cd ~
+
+sudo apt-get install imagemagick
