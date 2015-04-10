@@ -6,12 +6,12 @@ from natsort import natsorted
 from random import randint
 
 from skimage import exposure
-from matplotlib import pyplot
+#from matplotlib import pyplot
 from skimage.io import imread
-from skimage.io import imshow
-from skimage.filters import sobel
+#from skimage.io import imshow
+#from skimage.filters import sobel
 from skimage import feature
-from skimage.restoration import denoise_tv_chambolle
+#from skimage.restoration import denoise_tv_chambolle
 
 from sklearn.utils import shuffle
 from sklearn.preprocessing import StandardScaler
