@@ -129,7 +129,7 @@ class DataAugmentationBatchIterator(BatchIterator):
         augmentation_params = {
             'zoom_range': (1.0, 1.3),
             'rotation_range': (0, 360),
-            'shear_range': (0, 20),
+            'shear_range': (0, 0),
             'translation_range': (-5, 5),
         }
 
@@ -165,27 +165,6 @@ class DataAugmentationBatchIterator(BatchIterator):
             log_zoom_range = [np.log(z) for z in zoom_range]
             zoom = np.exp(np.random.uniform(*log_zoom_range)) # for a zoom factor this sampling approach makes more sense.
             # the range should be multiplicatively symmetric, so [1/1.1, 1.1] instead of [0.9, 1.1] makes more sense.
-
-
-            translation = (0,0)
-            rotation = 0.0
-            shear = 0.0
-            zoom = 1.0
-
-            rotate =  np.random.randint(6)
-            if rotate == 0:
-                rotation = 0.0
-            elif rotate == 1:
-                rotation = 45.0
-            elif rotate == 2:
-                rotation = 90.0
-            elif rotate == 3:
-                rotation = 135.0
-            elif rotate == 4:
-                rotation = 180.0
-            else:
-                rotation = 270.0
-
 
             ## flip
             if do_flip and (np.random.randint(2) > 0): # flip half of the time
