@@ -7,7 +7,8 @@ from random import randint
 
 from skimage import exposure
 #from matplotlib import pyplot
-from skimage.io import imread
+#from skimage.io import imread
+from PIL import Image
 #from skimage.io import imshow
 #from skimage.filters import sobel
 from skimage import feature
@@ -43,7 +44,8 @@ def load_images(path, labels):
     for n in names:
         print n.split('.')[0], labels.level[labels.image == n.split('.')[0]].values
         
-        image = imread(os.path.join(path, n))[:, :, 1]
+        #image = imread(os.path.join(path, n))[:, :, 1]
+        image = np.array(Image.open(os.path.join(path, n)))[:, :, 1]
         
         image = exposure.equalize_hist(image)
         #image = denoise_tv_chambolle(image, weight = 0.05, multichannel = False)
