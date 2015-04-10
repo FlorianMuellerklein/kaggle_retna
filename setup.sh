@@ -37,7 +37,7 @@ wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.c
 wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.002
 wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.003
 wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.004
-wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.0045
+wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.005
 wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/trainLabels.csv.zip
 #wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/facial-keypoints-detection/download/SampleSubmission.csv
 #wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/facial-keypoints-detection/download/IdLookupTable.csv
