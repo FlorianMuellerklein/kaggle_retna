@@ -37,7 +37,7 @@ def load_images(path, labels):
     print num_rows
     
     print 'making dataset ... '
-    train_image = np.zeros((num_rows, num_features), dtype = float)
+    train_image = np.empty((num_rows, num_features), dtype = float)
     levels = np.zeros((num_rows, 1), dtype = int)
     file_names = []
     i = 0
