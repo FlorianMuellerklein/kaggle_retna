@@ -19,7 +19,7 @@ from sklearn.preprocessing import StandardScaler
 PATH = '/Volumes/Mildred/Kaggle/Retna/Data/Backup/train/'
 LABELS = '/Volumes/Mildred/Kaggle/Retna/trainLabels.csv'
 
-maxPixel = 196
+maxPixel = 512
 imageSize = maxPixel * maxPixel
 num_features = imageSize
 
