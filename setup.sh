@@ -43,7 +43,8 @@ wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.c
 #wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/facial-keypoints-detection/download/IdLookupTable.csv
 mv www.kaggle.com/c/diabetic-retinopathy-detection/download/* .
 sudo apt-get install unzip
-unzip train.zip.001
+cat train.zip* > train.zip
+unzip train.zip
 unzip trainLabels.csv.zip
 rm -rf www.kaggle.com/
 
