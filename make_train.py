@@ -67,10 +67,10 @@ print levels.shape
 np.save('train_grey.npy', train)
 np.save('train_y.npy', levels)
 
-plot_sample(train[randint(0, train.shape[0])])
-plot_sample(train[randint(0, train.shape[0])])
-plot_sample(train[randint(0, train.shape[0])])
-plot_sample(train[randint(0, train.shape[0])])
+#plot_sample(train[randint(0, train.shape[0])])
+#plot_sample(train[randint(0, train.shape[0])])
+#plot_sample(train[randint(0, train.shape[0])])
+#plot_sample(train[randint(0, train.shape[0])])
 print np.amax(train[0])
 print np.amin(train[0])
 
