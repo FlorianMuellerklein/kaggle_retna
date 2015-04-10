@@ -16,8 +16,8 @@ from skimage.restoration import denoise_tv_chambolle
 from sklearn.utils import shuffle
 from sklearn.preprocessing import StandardScaler
 
-PATH = '/Volumes/Mildred/Kaggle/Retna/Data/Backup/train/'
-LABELS = '/Volumes/Mildred/Kaggle/Retna/trainLabels.csv'
+PATH = '/home/ubuntu/kaggle_retna/data/train'
+LABELS = '/home/ubuntu/kaggle_retna/data/trainLabels.csv'
 
 maxPixel = 512
 imageSize = maxPixel * maxPixel
