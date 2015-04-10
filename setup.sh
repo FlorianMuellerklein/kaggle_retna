@@ -33,12 +33,12 @@ sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/maste
 # download data files and save them under /data
 mkdir data
 cd data
-wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.001
-wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.002
-wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.003
-wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.004
-wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.0045
-wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/diabetic-retinopathy-detection/download/trainLabels.csv.zip
+wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.001
+wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.002
+wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.003
+wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.004
+wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/train.zip.0045
+wget -x --load-cookies ~/cookies.txt --no-check-certificate https://www.kaggle.com/c/diabetic-retinopathy-detection/download/trainLabels.csv.zip
 #wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/facial-keypoints-detection/download/SampleSubmission.csv
 #wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/facial-keypoints-detection/download/IdLookupTable.csv
 mv www.kaggle.com/c/diabetic-retinopathy-detection/download/* .
