@@ -25,7 +25,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import LabelBinarizer, LabelEncoder
 
-learning_rate = 0.003
+learning_rate = 0.04
 PATH = 'train_grey.npy'
 yPATH ='train_y.npy'
 TESTPATH = 'test.npy'
@@ -255,7 +255,7 @@ conv_net = NeuralNet(
     
     batch_iterator_train = DataAugmentationBatchIterator(batch_size = 128),
     on_epoch_finished=[
-        AdjustVariable('update_learning_rate', start = learning_rate, stop = 0.0001),
+        AdjustVariable('update_learning_rate', start = learning_rate, stop = 0.0004),
         #AdjustVariable('update_momentum', start = 0.9, stop = 0.999),
         #EarlyStopping(patience = 200),
         ],
