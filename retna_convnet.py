@@ -252,12 +252,12 @@ conv_net = NeuralNet(
     conv6_num_filters = 512, conv3_filter_size = (3, 3), pool3_ds = (2, 2),
     #dropout3_p = 0.3,
     
-    hidden4_num_units = 1024,
-    dropout4_p = 0.5,
+    hidden7_num_units = 1024,
+    dropout7_p = 0.5,
     #maxout4_ds = 2,
     
-    hidden5_num_units = 1024,
-    dropout5_p = 0.5,
+    hidden8_num_units = 1024,
+    dropout8_p = 0.5,
     #maxout5_ds = 2,
     
     output_num_units = 5, # 5 target values
